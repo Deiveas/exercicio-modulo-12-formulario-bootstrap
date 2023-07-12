@@ -1,5 +1,4 @@
-$(document).ready(function(){
-
+$(document).ready(function () {
     $('#carossel-imagens').slick({
         autoplay: true,
         arrows: false,
@@ -9,10 +8,19 @@ $(document).ready(function(){
 
     $('#tel').mask('(00) 00000-0000');
 
-    let formCadastro = $('#form-cadastro');
+    let formCadastro = $("#form-cadastro");
 
-    formCadastro.on('submit', function(e){
+    $('#text-button-red').click(function (e) {
         e.preventDefault();
+
+        if (formCadastro[0].checkValidity()) {
+            abrirImagemSucesso();
+        } else {
+            formCadastro[0].reportValidity();
+        }
     });
 
+    function abrirImagemSucesso() {
+        window.open('https://www.acejundiai.com.br/wp-content/uploads/2020/06/CADASTRO-REALIZADO-COM-SUCESSO-1.jpg');
+    }
 });
