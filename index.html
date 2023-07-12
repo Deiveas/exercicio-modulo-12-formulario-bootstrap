@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAS Shoes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>DAS Shoes</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sobre-loja">Sobre a loja</a>
+                    </li>
+
+                    <li>
+                        <a href="#produtos">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#cadastro">Cadastre-se aqui</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="carossel-imagens">
+        <img src="./images/carossel-1.jpg" alt="imagem-carossel-1">
+        <img src="./images/carossel-2.jpg" alt="imagem-carossel-2">
+        <img src="./images/carossel-3.jpg" alt="imagem-carossel-3">
+        <img src="./images/carossel-4.jpg" alt="imagem-carossel-4">
+    </div>
+
+    <section id="sobre-loja">
+        <div class="encontra-tenis container">
+            <h1>"Aqui você encontra o tênis do seu tamanho"</h1>
+        </div>
+        <div class="container container-flex">
+            <img src="./images/loja-nike.jpg" alt="imagem-loja-nike">
+            <div class="alinha-sobre">
+                <h2>Sobre a "DAS Shoes"</h2>
+                <p>
+                    Este site foi desenvolvido com intuito de despertar o interesse do usuário interagindo de forma
+                    amigavél, com carrosel de imagens, seções distintas e bem definidas, contruidas em HTML5,
+                    estilizadas em CSS3 e JavaScript com o auxílio da biblioteca JQuery para alcançar o efeito slide do
+                    carossel.
+                    Foi acrescentado um formulário para cadastro com o auxílio da biblioteca bootstrap.
+                </p>
+                <p>
+                    Faz parte de um exercício do módulo 12 proposto pela tutoria da EBAC com a finalidade de aplicar
+                    todos os conhecimentos adquiridos até o momento.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="produtos">
+        <div class="container container-produtos">
+            <h2>Produtos</h2>
+            <ul class="produto">
+                <li class="espacamento">
+                    <img class="img-produto" src="./images/tenis-nike-1.jpg" alt="imagem-nike-1">
+                    <h5>Nike Dunk High Varsity Maize</h5>
+                    <p>Modelo Masculino</p>
+                    <p>
+                        Cores: preto e amarelo<br> Disponível nos tamanhos: 38, 39, 40 e 41
+                    </p>
+                    <div class="price">
+                        <strong>R$ 825,00</strong>
+                    </div>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+
+                <li class="espacamento">
+                    <img class="img-produto" src="./images/tenis-nike-2.jpg" alt="imagem-nike-2">
+                    <h5>NIKE ZOOM KOBE 5 PROTRO</h5>
+                    <p>Modelo Masculino</p>
+                    <p>
+                        Cores: amarelo e azul<br> Disponível nos tamanhos: 38, 39, 40 e 41
+                    </p>
+                    <div class="price">
+                        <strong>R$ 1.100,00</strong>
+                    </div>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li class="espacamento">
+                    <img class="img-produto" src="./images/tenis-nike-3.jpg" alt="imagem-nike-3">
+                    <h5> Nike Air Jordan 1 Retro High</h5>
+                    <p>Modelo Masculino</p>
+                    <p>
+                        Cores: preto e verde<br> Disponível nos tamanhos: 38, 39, 40 e 41
+                    </p>
+                    <div class="price">
+                        <strong>R$ 1.600,00</strong>
+                    </div>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                <li class="espacamento">
+                    <img class="img-produto" src="./images/tenis-nike-4.jpg" alt="imagem-nike-4">
+                    <h5>Nike Dunk Low Ceramic</h5>
+                    <p>Modelo Masculino</p>
+                    <p>
+                        Cores: preto e laranja<br> Disponível nos tamanhos: 38, 39, 40 e 41
+                    </p>
+                    <div class="price">
+                        <strong>R$ 1.200,00</strong>
+                    </div>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="cadastro">
+        <div class="container row">
+            <div class="col">
+                <h2>Faça seu cadastro aqui</h2>
+                <form id="form-cadastro">
+                    <label class="form-label" for="nome">Nome completo:</label>
+                    <input class="form-control" id="nome" type="text" required>
+                    <label class="form-label" for="email">Digite seu E-mail:</label>
+                    <input class="form-control" id="email" type="text" required>
+                    <label class="form-label" for="tel">Digite seu celular:</label>
+                    <input class="form-control" id="tel" type="text" required>
+                    <div class="form-check form form-switch">
+                        <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+                        <input class="form-check-input" id="aceito-termos" type="checkbox" required>
+                    </div>
+                    <button id="text-button-red" class="btn btn-outline-light">Cadastrar</button>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container rodape">
+            <p>
+                2023 &copy; Desenvolvido Por Deive Silva - DAS Shoes Calçados para todas as idades e tamanhos - Todos os
+                Direitos Reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+
+
+</body>
+
+</html>
