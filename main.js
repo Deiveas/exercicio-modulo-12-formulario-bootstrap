@@ -14,13 +14,9 @@ $(document).ready(function () {
         e.preventDefault();
 
         if (formCadastro[0].checkValidity()) {
-            abrirImagemSucesso();
+            formCadastro.submit(); // Submeter o formulário para a Vercel
         } else {
             formCadastro[0].reportValidity();
         }
     });
-
-    function abrirImagemSucesso() {
-        window.open('https://www.acejundiai.com.br/wp-content/uploads/2020/06/CADASTRO-REALIZADO-COM-SUCESSO-1.jpg');
-    }
 });
