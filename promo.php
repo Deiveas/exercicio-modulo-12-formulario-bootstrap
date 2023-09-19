@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mail($destinatario, $assunto, $mensagem, $headers);
 
     // Redirecionar de volta para a página promo.html (ou qualquer outra página de sucesso que você deseje)
-    header("Location: https://sua-vercel-url/promo.html");
+    header("Location: https://exercicio-modulo-12-formulario-bootstrap.vercel.app/promo.html");
     exit();
 }
 ?>
